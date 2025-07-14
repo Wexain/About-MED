@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>hrishit@root ~</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #0f0;
+      font-family: 'Courier New', Courier, monospace;
+      padding: 30px;
+      margin: 0;
+    }
+    .terminal-line {
+      margin: 8px 0;
+    }
+    .command {
+      color: #0ff;
+    }
+    .output {
+      color: #ccc;
+    }
+    a {
+      color: #0ff;
+      text-decoration: none;
+    }
+    h2 {
+      color: #b19cd9;
+      margin-top: 30px;
+      border-bottom: 1px solid #444;
+      padding-bottom: 4px;
+    }
+    #contact-form {
+      margin-top: 20px;
+    }
+    input, textarea {
+      background-color: #222;
+      border: 1px solid #333;
+      color: #0f0;
+      font-family: monospace;
+      padding: 8px;
+      margin: 5px 0;
+      width: 100%;
+    }
+    button {
+      background-color: #0f0;
+      color: #000;
+      border: none;
+      font-family: monospace;
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+    .blink {
+      animation: blink 1s steps(1) infinite;
+    }
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="terminal">
+    <div class="terminal-line">hrishit@root:~$ <span class="command">whoami</span></div>
+    <div class="terminal-line output">Creative Technologist | Digital Artist | OSINT Learner</div>
+
+    <div class="terminal-line">hrishit@root:~$ <span class="command">cat about.txt</span></div>
+    <div class="terminal-line output">Age: 10 | Passion: Digital Art, Cybersecurity, Hacking Culture</div>
+
+    <div class="terminal-line">hrishit@root:~$ <span class="command">./skills.sh</span></div>
+    <div class="terminal-line output">- Python | Web Dev | OSINT | Linux | Ethical Hacking</div>
+    <div class="terminal-line output">- Creative Tools: Photoshop, Figma, Blender</div>
+
+
+  <script>
+    const text = "Welcome to hrishit's terminal.";
+    let i = 0;
+    const typing = document.getElementById("typing");
+
+    function typeWriter() {
+      if (i < text.length) {
+        typing.innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, 90);
+      }
+    }
+  
+
+ </spript>
+</body>
+</html>
